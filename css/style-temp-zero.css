@@ -416,6 +416,7 @@ header .container .links a:hover {
     color: #777;
     text-align: right;
     direction: rtl;
+    margin-top: 6%;
 }
 
 .About .about-content .about-title hr {
@@ -506,6 +507,19 @@ header .container .links a:hover {
 .social svg {
     margin-left: 0.5%;
     cursor: pointer;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.social svg:hover {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
 }
 
 .Contact-text h2::after {
@@ -642,7 +656,7 @@ header .container .links a:hover {
     }
     .special-text {
         font-size: 50px;
-        color: var(--color-one);
+        color: #06cab340;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -656,5 +670,12 @@ header .container .links a:hover {
     .About .about-image::after,
     .About .about-image::before {
         display: none;
+    }
+}
+
+@media (max-width:430px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
     }
 }
